@@ -8,9 +8,9 @@ pamoun_enter=st.number_input('',1)
 
 st.write("Selected Amount:")
         if pamoun_enter==1:
-            st.write(pamoun_sli)
+           st.write(pamoun_sli)
         else:
-            st.write(pamoun_enter)
+           st.write(pamoun_enter)
     
 st.write("Rate")
 rate_enter=st.number_input('', 1)
