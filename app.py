@@ -4,27 +4,33 @@ st.write("Monthly SIP Calculator")
 
 st.write("Monthly Installment")
 pamoun_sli=st.slider(label="",min_value=1, max_value=10000, step=1)
-pamoun_enter=st.number_input('Monthly Installment',1)
-if pamoun_enter==1:
-    st.write(pamoun_sli)
-else:
-    st.write(pamoun_enter)
+pamoun_enter=st.number_input('',1)
+
+st.write("Selected Amount:")
+        if pamoun_enter==1:
+            st.write(pamoun_sli)
+        else:
+            st.write(pamoun_enter)
     
 st.write("Rate")
-rate_enter=st.number_input('Rate', 1)
+rate_enter=st.number_input('', 1)
 rate_sli=st.slider(label="",min_value=1, max_value=100, step=1)
-if rate_enter==1:
-    st.write(rate_sli)
-else:
-    st.write(rate_enter)
+
+st.write("Selected Rate:")
+        if rate_enter==1:
+            st.write(rate_sli)
+        else:
+            st.write(rate_enter)
 
 st.write("Time")
-time_enter=st.number_input('Time', 1)
+time_enter=st.number_input('', 1)
 time_sli=st.slider(label="",min_value=1, max_value=100, step=1)
-if time_enter==1:
-    st.write(time_sli)
-else:
-    st.write(time_enter)
+
+st.write("Selected Time:")
+        if time_enter==1:
+            st.write(time_sli)
+        else:
+            st.write(time_enter)
 month=st.checkbox("In Months")
 
 princ=st.number_input('Principal Amount', 1)
