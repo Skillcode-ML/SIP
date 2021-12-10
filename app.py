@@ -48,8 +48,8 @@ def sip(investment, tenure, interest, amount=0, is_year=True, is_percent=True, s
     return {'Amount @ Maturity': amount, 'Total Investment' : stt*sm, 'Total Gains':amount-(stt*sm), 'Amount every month': amount_every_month} if show_amount_list else {'Amount @ Maturity': amount} 
 
 if month:
-    st.write(sip(pamoun, time, rate, princ, False))
+    st.write(sip(sm, stt, sr, princ, False))
 else:
-    st.write(sip(pamoun, time, rate, princ))
+    st.write(sip(sm, stt, sr, princ))
 
 
