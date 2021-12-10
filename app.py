@@ -2,11 +2,11 @@ import streamlit as st
 
 st.write("Monthly SIP Calculator")
 pamoun=st.number_input('Monthly Installment', 1)
-st.slider(min_value=1, max_value=10000, step=1)
+st.slider(label="",min_value=1, max_value=10000, step=1)
 rate=st.number_input('Rate', 1)
-st.slider(min_value=1, max_value=100, step=1)
+st.slider(label="",min_value=1, max_value=100, step=1)
 time=st.number_input('Time', 1)
-st.slider(min_value=1, max_value=100, step=1)
+st.slider(label="",min_value=1, max_value=100, step=1)
 month=st.checkbox("In Months")
 princ=st.number_input('Principal Amount', 1)
 
