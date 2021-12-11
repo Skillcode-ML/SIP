@@ -7,7 +7,9 @@ st.title("Monthly SIP Calculator")
 col1, col2 = st.beta_columns((2,1))
 
 with col1:
-    num_am=st.num_input(
+    num_am=st.number_input(label='mon',min_Value=1,max_value=10000, key='hel')
+    num_am.setValue=st.slider(label="Monthly Intallment",min_value=1, max_value=10000, step=1)
+
 
 
 with col2:
@@ -15,7 +17,6 @@ with col2:
 
 
 
-pamoun_sli=st.slider(label="Monthly Intallment",min_value=1, max_value=10000, step=1)
 
 
 if pamoun_enter==1:
