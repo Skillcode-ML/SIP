@@ -18,10 +18,10 @@ with col2:
 
 
 
-if pamoun_enter==1:
-    sm=(pamoun_sli)
-else:
-   sm=(pamoun_enter)
+    if pamoun_enter==1:
+        sm=(pamoun_sli)
+    else:
+        sm=(pamoun_enter)
 st.write("Selected Amount:",sm)
     
 st.write("Rate")
